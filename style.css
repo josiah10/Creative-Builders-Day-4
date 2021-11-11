@@ -1,0 +1,68 @@
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+.container h3{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.main{
+    padding: 20px 10px;
+    border-radius: 7px;
+    border: 1px solid white;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 7px 9px 0 rgba(0,0,0,0.75);
+
+}
+.content{
+    text-align: justify;
+    display: none;
+    animation-name: modalopen;
+    animation-duration: 2s;
+    font-weight: bolder;
+
+}
+.my-button{
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#btn:hover{
+   font-size: 40px;
+}
+.cla{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cla p{
+    font-size: 17px;
+}
+.minus{
+    color: red;
+    display: none;
+}
+.plus{
+    color: green;
+}
+
+.show .plus{
+    display: none;
+}
+.show .minus{
+    display: block;
+}
+.show .content{
+    display: inline;
+}
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
